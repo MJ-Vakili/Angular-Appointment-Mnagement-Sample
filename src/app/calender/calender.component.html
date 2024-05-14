@@ -1,0 +1,28 @@
+<p i18n>calender works!</p>
+<mat-card class="demo-inline-calendar-card">
+  <mat-calendar
+    #MatCalendar
+    [dateClass]="dateClass()"
+    [(selected)]="selected"
+  />
+</mat-card>
+<p i18n>Selected date: {{ selected | date: "short" }}</p>
+<button i18n mat-raised-button type="button" (click)="openDialog()">
+  Add Appointment
+</button>
+
+<ul cdkDropList (cdkDropListDropped)="drop($event)">
+  @for (item of hoursOfDay; track $index) {
+    <div cdkDrag class="calender-item-header" [cdkDragDisabled]="true">
+      {{ item }}
+
+      <hr />
+    </div>
+
+    @for (item2 of checkExistAppointment(item); track item2) {
+      <div class="calender-item" cdkDrag [cdkDragData]="item2">
+        {{ item2.title }} - {{ item2.description }}
+      </div>
+    }
+  }
+</ul>

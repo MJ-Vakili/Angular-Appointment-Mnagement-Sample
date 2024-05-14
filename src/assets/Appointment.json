@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "1",
+    "title": "Appointment 1",
+    "registered": "05/12/2024 10:00:00",
+    "description": "Appointment 1 desc"
+  },
+  {
+    "_id": "2",
+    "title": "Appointment 2",
+    "registered": "05/22/2024 12:00:00",
+    "description": "Appointment 2 desc"
+  },
+  {
+    "_id": "3",
+    "title": "Appointment 3",
+    "registered": "05/12/2024 10:00:00",
+    "description": "Appointment 3 desc"
+  },
+  {
+    "_id": "4",
+    "title": "Appointment 4",
+    "registered": "04/10/2024 06:00:00",
+    "description": "Appointment 4 desc"
+  },
+  {
+    "_id": "5",
+    "title": "Appointment 5",
+    "registered": "04/10/2024 06:00:00",
+    "description": "Appointment 5 desc"
+  }
+]

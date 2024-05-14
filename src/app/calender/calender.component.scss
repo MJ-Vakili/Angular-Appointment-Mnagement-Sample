@@ -1,0 +1,23 @@
+.demo-inline-calendar-card {
+  width: 300px;
+}
+
+:host ::ng-deep .special-date{
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.calender-item-header{
+  margin-top: 20px;
+
+  hr{
+    margin-top: 0;
+  }
+}
+
+.calender-item{
+  background-color: burlywood;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}

@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "search.useIgnoreFiles": true,
+  "stylelint.validate": [
+    "css",
+    "scss"
+  ],
+  "prettier.requireConfig": true,
+  "compile-hero.disable-compile-files-on-did-save-code": true
+}

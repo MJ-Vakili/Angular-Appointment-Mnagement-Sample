@@ -1,0 +1,35 @@
+<h2 i18n mat-dialog-title>Please complete the form below.</h2>
+<mat-dialog-content>
+  <p i18n>Title:</p>
+  <mat-form-field>
+    <mat-label i18n>Title</mat-label>
+    <input matInput [(ngModel)]="data.title" />
+  </mat-form-field>
+
+  <p i18n>Description:</p>
+  <mat-form-field>
+    <mat-label i18n>Description</mat-label>
+    <input matInput [(ngModel)]="data.description" />
+  </mat-form-field>
+
+  <p i18n>Registered Date:</p>
+
+  <mat-form-field class="example-full-width">
+    <mat-label i18n>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="data.registered" />
+    <mat-hint i18n>MM/DD/YYYY</mat-hint>
+
+    <mat-datepicker-toggle matIconSuffix [for]="picker" />
+    <mat-datepicker #picker />
+  </mat-form-field>
+
+  <p i18n>Registered hour:</p>
+  <mat-form-field>
+    <mat-label i18n>Description</mat-label>
+    <input matInput [(ngModel)]="data.hour" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button i18n mat-button (click)="onNoClick()">Cancel</button>
+  <button i18n mat-button cdkFocusInitial [mat-dialog-close]="data">Ok</button>
+</mat-dialog-actions>
